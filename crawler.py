@@ -1,7 +1,7 @@
-from bs4 import BeautifulSoup as soup
 from selenium import webdriver
 from selenium.webdriver.common.alert import Alert
 import csv
+import scriptParser
 
 loginURL = "https://db.kocca.kr/db/member/loginPage.do?menuNo=203303"
 listURL = "http://db.kocca.kr/db/broadcastdb/scriptList.do"
@@ -32,6 +32,7 @@ def login():
 def getDramaScript():
     # drama 대본 리스트
     global driver
+
     if driver is None:
         login()
     driver.get(listURL)
@@ -44,12 +45,11 @@ def getDramaScript():
     drama_links = [drama.get_attribute("href") for drama in driver.find_elements_by_xpath('//td[@class="left"]/a')]
     # paging
     page = [index.get_attribute("href") for index in driver.find_elements_by_xpath('//div[@class="paging"]/a')]
-    for i in range(3, 11):
+    for i in range(3, 3):
         driver.get(page[i])
         new_links = [drama.get_attribute("href") for drama in driver.find_elements_by_xpath('//td[@class="left"]/a')]
         for link in new_links:
             drama_links.append(link)
-
     print("드라마 갯수: %d" % (len(drama_links)))
 
     for link in drama_links:
@@ -70,6 +70,7 @@ def getDramaScript():
                         signin_window_handle = handle
                         break
             driver.switch_to.window(signin_window_handle)
+            print(driver.page_source)
             outFile(driver.page_source)
             driver.close()
             driver.switch_to.window(drama_window_handle)
@@ -77,11 +78,14 @@ def getDramaScript():
     driver.close()
     print("소스 파일 다운로드 완료!")
 
-
 def outFile(source):
-    bs = soup(source, 'html.parser')
-    title = bs.find(id="title")
-    f = open("./" + title + ".txt", 'wt')
-    f.write(bs.string)
+
+    title = scriptParser.getTitle(source)
+    contents = scriptParser.getContents(source)
+    f = open(title, 'wt', encoding="utf-8")
+    f.write(contents)
     f.close()
+
+
+
 
