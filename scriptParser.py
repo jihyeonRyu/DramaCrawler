@@ -31,10 +31,14 @@ def get_contents(source):
     xmlPath = BeautifulSoup(source, 'html.parser').find('input', attrs={'name':'xmlPath'})['value']
     r = requests.get(xmlPath)
     soup = BeautifulSoup(r.content, 'lxml')
+    title = remove_tag(str(soup.find('volumn_title').find('char')))
     raw = soup.find_all('cast')
-    contents = ""
-    for r in raw:
+    contents = remove_tag(str(soup.find('content', {'id': 'id2'}).find('char'))) + "\n" \
+               + remove_tag(str(soup.find('content', {'id': 'id3'}).find('char'))) + "\n" \
+               + remove_tag(str(soup.find('content', {'id': 'id4'}).find('char'))) + "\n" \
+               + remove_tag(str(soup.find('content', {'id': 'id5'}).find('char'))) + "\n"
 
+    for r in raw:
         roles = r.find_all('cast_role')
 
         for i in range(len(roles)):
@@ -54,7 +58,7 @@ def get_contents(source):
             elif string[i] in speechs:
                 contents = contents + remove_tag(str(string[i])) + "\n"
 
-    return contents
+    return title, contents
 
 
 """

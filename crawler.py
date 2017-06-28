@@ -8,6 +8,7 @@ import scriptParser
 loginURL = "https://db.kocca.kr/db/member/loginPage.do?menuNo=203303"
 listURL = "http://db.kocca.kr/db/broadcastdb/scriptList.do?menuNo=200462"
 driver = None
+num = 0
 
 proxy = Proxy(
      {
@@ -96,13 +97,16 @@ def get_drama_scripts():
 
 def out_file(source):
 
-    title = scriptParser.get_title(source)
-    contents = scriptParser.get_contents(source)
-    f = open(title, 'wt', encoding="utf-8")
-    f.write(contents)
-    f.close()
-    print("out %s file" % title)
-
+    global num
+    try:
+        title, contents = scriptParser.get_contents(source)
+        f = open(".\\data\\%s(%d).txt" % (title, num), 'wt', encoding="utf-8")
+        f.write(contents)
+        f.close()
+        num = num + 1
+        print("out %s file" % title)
+    except:
+        print("cannot out file")
 
 
 

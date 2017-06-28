@@ -1,37 +1,638 @@
-[INFO  - 2017-06-28T06:52:23.845Z] GhostDriver - Main - running on port 58151
-[INFO  - 2017-06-28T06:52:26.932Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-06-28T06:52:26.932Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.customHeaders:  - {}
-[INFO  - 2017-06-28T06:52:26.932Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"AUTODETECT"}}
-[INFO  - 2017-06-28T06:52:26.933Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 58cbeec0-5bce-11e7-aa81-ddc9954fa105
-[ERROR - 2017-06-28T06:52:30.063Z] RouterReqHand - _handle.error - {"name":"Invalid Command Method","message":"{\"headers\":{\"Accept\":\"application/json\",\"Accept-Encoding\":\"identity\",\"Connection\":\"close\",\"Content-Length\":\"53\",\"Content-Type\":\"application/json;charset=UTF-8\",\"Host\":\"127.0.0.1:58151\",\"User-Agent\":\"Python http auth\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"sessionId\\\": \\\"58cbeec0-5bce-11e7-aa81-ddc9954fa105\\\"}\",\"url\":\"/dismiss_alert\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"dismiss_alert\",\"directory\":\"/\",\"path\":\"/dismiss_alert\",\"relative\":\"/dismiss_alert\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/dismiss_alert\",\"queryKey\":{},\"chunks\":[\"dismiss_alert\"]},\"urlOriginal\":\"/session/58cbeec0-5bce-11e7-aa81-ddc9954fa105/dismiss_alert\"}","line":202,"sourceURL":"phantomjs://code/session_request_handler.js","stack":"_handle@phantomjs://code/session_request_handler.js:202:66\n_reroute@phantomjs://code/request_handler.js:61:20\n_handle@phantomjs://code/router_request_handler.js:78:46"}
+[INFO  - 2017-06-28T07:43:01.935Z] GhostDriver - Main - running on port 64900
+[INFO  - 2017-06-28T07:43:04.918Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:04.918Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[INFO  - 2017-06-28T07:43:04.918Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"AUTODETECT"}}
+[INFO  - 2017-06-28T07:43:04.918Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 6b93a7d0-5bd5-11e7-9396-559e3c645652
+[ERROR - 2017-06-28T07:43:08.760Z] RouterReqHand - _handle.error - {"name":"Invalid Command Method","message":"{\"headers\":{\"Accept\":\"application/json\",\"Accept-Encoding\":\"identity\",\"Connection\":\"close\",\"Content-Length\":\"53\",\"Content-Type\":\"application/json;charset=UTF-8\",\"Host\":\"127.0.0.1:64900\",\"User-Agent\":\"Python http auth\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"sessionId\\\": \\\"6b93a7d0-5bd5-11e7-9396-559e3c645652\\\"}\",\"url\":\"/dismiss_alert\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"dismiss_alert\",\"directory\":\"/\",\"path\":\"/dismiss_alert\",\"relative\":\"/dismiss_alert\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/dismiss_alert\",\"queryKey\":{},\"chunks\":[\"dismiss_alert\"]},\"urlOriginal\":\"/session/6b93a7d0-5bd5-11e7-9396-559e3c645652/dismiss_alert\"}","line":202,"sourceURL":"phantomjs://code/session_request_handler.js","stack":"_handle@phantomjs://code/session_request_handler.js:202:66\n_reroute@phantomjs://code/request_handler.js:61:20\n_handle@phantomjs://code/router_request_handler.js:78:46"}
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2017-06-28T06:52:48.990Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-06-28T06:52:48.991Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.customHeaders:  - {}
-[ERROR - 2017-06-28T06:52:50.050Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+[INFO  - 2017-06-28T07:43:26.942Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:26.942Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:27.646Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-06-28T06:52:50.051Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - stack:
+[ERROR - 2017-06-28T07:43:27.646Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
   (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2017-06-28T06:52:52.038Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-06-28T06:52:52.038Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.customHeaders:  - {}
-[ERROR - 2017-06-28T06:52:53.004Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+[INFO  - 2017-06-28T07:43:29.531Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:29.531Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:30.252Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-06-28T06:52:53.005Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - stack:
+[ERROR - 2017-06-28T07:43:30.252Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
   (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2017-06-28T06:52:55.247Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-06-28T06:52:55.247Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.customHeaders:  - {}
-[ERROR - 2017-06-28T06:52:56.160Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+[INFO  - 2017-06-28T07:43:32.310Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:32.310Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:33.348Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-06-28T06:52:56.160Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.onError - stack:
+[ERROR - 2017-06-28T07:43:33.348Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
   (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2017-06-28T06:52:58.339Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-06-28T06:52:58.339Z] Session [58cbeec0-5bce-11e7-aa81-ddc9954fa105] - page.customHeaders:  - {}
+[INFO  - 2017-06-28T07:43:35.330Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:35.330Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:36.227Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:36.228Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:38.290Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:38.290Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:38.850Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:38.850Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:40.507Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:40.508Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:41.303Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:41.303Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:43.675Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:43.675Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:44.523Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:44.524Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:47.005Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:47.005Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:47.846Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:47.846Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:49.635Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:49.635Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:50.208Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:50.209Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:52.133Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:52.134Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:53.051Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:53.051Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:55.386Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:55.386Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:56.087Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:56.087Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:57.327Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:57.327Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:57.907Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:57.907Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:58.860Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:58.860Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:43:59.158Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:43:59.158Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:43:59.962Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:43:59.962Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:00.688Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:00.688Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:02.009Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:02.009Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:02.914Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:02.914Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:04.297Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:04.297Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:05.103Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:05.103Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:06.237Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:06.237Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:06.568Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:06.568Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:08.075Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:08.075Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:08.631Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:08.631Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:09.607Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:09.607Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:10.197Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:10.197Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:11.318Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:11.319Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:12.140Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:12.140Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:15.224Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:15.224Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:16.026Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:16.026Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:17.745Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:17.745Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:18.405Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:18.405Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:19.679Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:19.679Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:20.307Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:20.308Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:21.721Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:21.721Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:22.252Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:22.252Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:23.942Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:23.942Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:24.350Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:24.350Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:25.645Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:25.645Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:26.152Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:26.153Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:27.873Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:27.873Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:28.555Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:28.556Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:29.910Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:29.910Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:30.560Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:30.560Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:32.589Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:32.590Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:33.233Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:33.234Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:34.902Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:34.902Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:35.846Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:35.846Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:37.902Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:37.902Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:38.550Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:38.550Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:40.771Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:40.771Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:41.627Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:41.627Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:43.192Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:43.192Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:43.728Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:43.728Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:45.414Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:45.414Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:45.814Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:45.814Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:46.908Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:46.908Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:47.418Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:47.418Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:48.867Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:48.867Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:49.197Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:49.198Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:51.170Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:51.170Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:51.976Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:51.977Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:54.346Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:54.346Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:55.139Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:55.140Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:56.667Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:56.667Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:57.605Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:57.606Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:44:58.916Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:44:58.916Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:44:59.263Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:44:59.264Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:00.255Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:00.256Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:00.575Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:00.576Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:02.032Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:02.032Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:02.479Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:02.479Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:03.781Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:03.781Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:04.269Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:04.269Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:06.521Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:06.521Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:07.054Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:07.055Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:08.955Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:08.955Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:09.387Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:09.387Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:10.568Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:10.569Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:11.420Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:11.421Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:13.030Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:13.030Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:13.917Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:13.917Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:17.292Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:17.292Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:17.937Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:17.937Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:18.767Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:18.767Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:19.291Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:19.291Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:20.126Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:20.126Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:20.416Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:20.417Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:21.313Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:21.313Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:21.772Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:21.772Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:22.562Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:22.562Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:23.049Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:23.050Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:24.094Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:24.094Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:24.518Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:24.518Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:25.318Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:25.318Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:25.772Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:25.773Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:26.571Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:26.572Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:26.984Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:26.985Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:27.837Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:27.837Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:28.210Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:28.210Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:28.927Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:28.927Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:29.263Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:29.263Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:32.008Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:32.008Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:32.565Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:32.566Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:34.038Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:34.038Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:34.400Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:34.400Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:35.701Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:35.702Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:36.194Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:36.194Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:37.082Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:37.082Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:37.531Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:37.531Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:38.450Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:38.450Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:38.749Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:38.749Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:39.567Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:39.568Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:39.859Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:39.859Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:40.530Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:40.530Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:40.888Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:40.889Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:41.886Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:41.886Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:42.255Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:42.255Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:43.897Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:43.897Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:44.572Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:44.573Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:45.632Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:45.632Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:46.021Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:46.022Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:48.080Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:48.080Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:48.751Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:48.751Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:49.642Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:49.642Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:50.038Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:50.038Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-06-28T07:45:50.781Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-06-28T07:45:50.781Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.customHeaders:  - {}
+[ERROR - 2017-06-28T07:45:51.121Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - msg: TypeError: undefined is not an object (evaluating '$.browser.msie')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-06-28T07:45:51.122Z] Session [6b93a7d0-5bd5-11e7-9396-559e3c645652] - page.onError - stack:
+  (anonymous function) (http://www.kocca.kr/jquery/external/jquery.bgiframe-2.1.2.js:9)
+
+  phantomjs://platform/console++.js:263 in error
