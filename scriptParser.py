@@ -11,21 +11,6 @@ def remove_tag(source):
     return source
 
 
-def get_title(source):
-    soup = BeautifulSoup(source, 'html.parser')
-    titles = soup.find_all(id="title")
-    for i in range(len(titles)):
-        titles[i] = remove_tag(str(titles[i]))
-
-    if len(titles) >= 2:
-        return ".\\data\\%s_%s.txt" % (titles[0], titles[1])
-    elif len(titles) == 1:
-        return ".\\data\\%s.txt" % titles[0]
-    else:
-        print("no title")
-        return "noTitle"
-
-
 def get_contents(source):
 
     xmlPath = BeautifulSoup(source, 'html.parser').find('input', attrs={'name':'xmlPath'})['value']
