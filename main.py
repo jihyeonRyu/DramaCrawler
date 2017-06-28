@@ -1,4 +1,4 @@
 import crawler
 
 if __name__ == "__main__":
-    crawler.getDramaScript()
+    crawler.get_drama_scripts()
