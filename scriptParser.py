@@ -29,42 +29,36 @@ def get_title(source):
 def get_contents(source):
 
     xmlPath = BeautifulSoup(source, 'html.parser').find('input', attrs={'name':'xmlPath'})['value']
-    r = requests.get(xmlPath)
-    soup = BeautifulSoup(r.content, 'lxml')
+    g = requests.get(xmlPath)
+    soup = BeautifulSoup(g.content, 'lxml')
     title = remove_tag(str(soup.find('volumn_title').find('char')))
-    raw = soup.find_all('cast')
     contents = remove_tag(str(soup.find('content', {'id': 'id2'}).find('char'))) + "\n" \
                + remove_tag(str(soup.find('content', {'id': 'id3'}).find('char'))) + "\n" \
                + remove_tag(str(soup.find('content', {'id': 'id4'}).find('char'))) + "\n" \
                + remove_tag(str(soup.find('content', {'id': 'id5'}).find('char'))) + "\n"
 
-    for r in raw:
-        roles = r.find_all('cast_role')
+    string = soup.find_all('char')
 
-        for i in range(len(roles)):
-            roles[i] = roles[i].find('char')
+    explain = soup.find_all('scene_explain')
+    explain_all = []
+    for i in range(len(explain)):
+        temp = explain[i].find_all('char')
+        for t in temp:
+            explain_all.append(t)
+    speech = soup.find_all('cast_speech')
+    for i in range(len(speech)):
+        speech[i] = speech[i].find('char')
 
-        speechs = r.find_all('cast_speech')
+    role = soup.find_all('cast_role')
+    for i in range(len(role)):
+        role[i] = role[i].find('char')
 
-        for i in range(len(speechs)):
-            speechs[i] = speechs[i].find('char')
-
-        string = r.find_all('char')
-
-        for i in range(len(string)):
-            if string[i] in roles:
-                contents = contents + remove_tag(str(string[i])) + ": "
-
-            elif string[i] in speechs:
-                contents = contents + remove_tag(str(string[i])) + "\n"
-
+    for s in string:
+        if s in explain_all:
+            contents = contents + remove_tag(str(s)) + "\n"
+        elif s in role:
+            contents = contents + remove_tag(str(s)) + ": "
+        elif s in speech:
+            contents = contents + remove_tag(str(s)) + "\n"
     return title, contents
 
-
-"""
-    all_contents = str(soup.prettify())
-    print(all_contents)
-    raw = re.findall(
-    r'<tr>[ \t\n\r\f\v]*?<td id="left" .*?>[^<]*?</td>[ \t\n\r\f\v]*?<td id="right">[^<]*?</td>[ \t\n\r\f\v]*?</tr>',
-    all_contents)
-"""
